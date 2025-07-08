@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta Tipográfica - Novo SIABI</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Novas fontes: Roboto como principal e Montserrat para destaque -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            // Define 'Roboto' como a fonte padrão (sans-serif)
+            sans: ['Roboto', 'ui-sans-serif', 'system-ui'],
+            // Adiciona 'Montserrat' como uma família de fontes customizada para destaques
+            montserrat: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Estilo adicional para melhorar a apresentação */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <div class="container mx-auto p-6 md:p-10">
+    
+    <header class="text-center mb-10 border-b pb-4">
+      <h1 class="font-montserrat font-extrabold text-4xl md:text-5xl text-emerald-700">Proposta Tipográfica</h1>
+      <p class="text-lg text-gray-600 mt-2">Baseada na identidade visual do IFRN para um novo site SIABI</p>
+    </header>
+
+    <section class="mb-12">
+      <h2 class="font-montserrat font-bold text-2xl md:text-3xl mb-4 text-gray-900">1. Fonte Principal: Roboto</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <p class="mb-6 leading-relaxed">
+          <strong>Roboto</strong> é uma fonte sans-serif moderna e amplamente utilizada, conhecida por sua legibilidade e versatilidade. Será a fonte principal para o corpo de texto e elementos de interface, garantindo clareza e uma experiência de leitura confortável.
+        </p>
+        <div class="space-y-4">
+          <p class="text-lg"><span class="font-normal bg-gray-200 py-1 px-2 rounded-md mr-2">Regular (400)</span> O rápido jabuti marrom salta sobre o cão preguiçoso.</p>
+          <p class="text-lg"><span class="font-semibold bg-gray-200 py-1 px-2 rounded-md mr-2">Semibold (600)</span> O rápido jabuti marrom salta sobre o cão preguiçoso.</p>
+          <p class="text-lg"><span class="font-bold bg-gray-200 py-1 px-2 rounded-md mr-2">Bold (700)</span> O rápido jabuti marrom salta sobre o cão preguiçoso.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="font-montserrat font-bold text-2xl md:text-3xl mb-4 text-gray-900">2. Fonte de Destaque: Montserrat</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <p class="mb-6 leading-relaxed">
+          <strong>Montserrat</strong> é uma fonte geométrica sans-serif com uma estética elegante e contemporânea. É ideal para títulos, subtítulos e chamadas que precisam de um destaque visual, complementando a Roboto e criando uma hierarquia clara e moderna.
+        </p>
+        <div class="space-y-4 font-montserrat">
+          <p class="text-xl font-bold"><span class="font-bold bg-gray-200 py-1 px-2 rounded-md mr-2 text-base font-sans">Bold (700)</span> Títulos e Chamadas de Impacto</p>
+          <p class="text-xl font-extrabold"><span class="font-bold bg-gray-200 py-1 px-2 rounded-md mr-2 text-base font-sans">ExtraBold (800)</span> Destaques Visuais no Site</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="font-montserrat font-bold text-2xl md:text-3xl mb-4 text-gray-900">3. Hierarquia e Aplicação</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md space-y-6">
+        <div>
+          <p class="text-sm text-gray-500 uppercase mb-1">Título Principal (H1)</p>
+          <h1 class="font-montserrat font-extrabold text-4xl text-gray-800">Nome do Serviço ou Página</h1>
+        </div>
+        <div>
+          <p class="text-sm text-gray-500 uppercase mb-1">Subtítulo (H2)</p>
+          <h2 class="font-montserrat font-bold text-2xl text-gray-700">Seção de Informações Importantes</h2>
+        </div>
+        <div>
+          <p class="text-sm text-gray-500 uppercase mb-1">Corpo de Texto (p)</p>
+          <p class="text-base leading-relaxed text-gray-800">
+            Este é um parágrafo de exemplo utilizando a fonte <strong>Roboto</strong> no peso regular. Todo o conteúdo textual principal do site, como descrições, notícias e informações de ajuda, deve seguir este padrão para garantir máxima legibilidade e conforto para o usuário durante a leitura. A consistência é fundamental.
+          </p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-500 uppercase mb-1">Links e Botões</p>
+          <a href="#" class="text-emerald-600 font-semibold hover:underline">Este é um link de exemplo</a>
+          <button class="bg-emerald-600 text-white font-bold py-2 px-4 rounded-md ml-4 hover:bg-emerald-700 transition-colors">Botão de Ação</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
